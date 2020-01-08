@@ -24,7 +24,7 @@ func worker(name string, taskChannel chan string)  {
 			return
 		}
 		//fmt.Printf("worker %s start %s\n", name, task)
-		time.Sleep(100 * time.Microsecond)
+		time.Sleep(10 * time.Second)
 		fmt.Printf("worker %s complete %s \n", name, task)
 	}
 }
